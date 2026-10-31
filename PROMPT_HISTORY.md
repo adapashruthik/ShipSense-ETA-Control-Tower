@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-I used ChatGPT as an AI-assisted development and learning tool during the development of the **ShipSense – ETA Control Tower** project.
+I used ChatGPT and claude ai  as an AI-assisted development and learning tool during the development of the **ShipSense – ETA Control Tower** project.
 
 My objective was to build a local-first logistics intelligence platform that combines carrier tracking events, route plans, weather conditions, and facility queues to predict shipment arrival times and identify potential delays.
 
