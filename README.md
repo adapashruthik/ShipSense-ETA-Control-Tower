@@ -24,7 +24,7 @@ Create a virtual environment (Windows PowerShell):
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-Copy-Item .env.example .env
+Copy-Item .env
 ```
 
 Edit `.env` and set your MySQL password. Create the database and tables:
