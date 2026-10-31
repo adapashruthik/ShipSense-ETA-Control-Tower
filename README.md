@@ -179,12 +179,3 @@ python -m pytest -v tests/test_prediction_correctness.py
 See `docs/PREDICTION_CORRECTNESS_TESTS.md` for coverage and interpretation.
 
 
-## YottaFlex candidate submission artifacts
-
-- `PROMPT_HISTORY.md`: reconstructed partial prompt record. Candidate must complete it with every prompt sent to every AI tool.
-- `docs/YOTTAFLEX_SUBMISSION_CHECKLIST.md`: requirements checklist based on the supplied guidelines and FAQ.
-- `docs/TECHNICAL_DECISIONS_AND_LIMITATIONS.md`: architecture decisions, assumptions and known limitations.
-- `docs/CANDIDATE_WALKTHROUGH.md`: walkthrough outline and candidate reflection worksheet.
-- `docs/FINAL_VERIFICATION_EVIDENCE.md`: summary of the Windows execution log shared by the candidate.
-
-Before publishing, complete the prompt history and candidate reflection, run a fresh-clone test, check the dashboard manually, and scan the repository for secrets. Never commit `.env` or real credentials.
