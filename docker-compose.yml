@@ -1,0 +1,20 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: shipsense-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: shipsense_local
+      MYSQL_DATABASE: shipsense
+    ports:
+      - "3306:3306"
+    volumes:
+      - shipsense_mysql:/var/lib/mysql
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p shipsense_local"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+volumes:
+  shipsense_mysql:

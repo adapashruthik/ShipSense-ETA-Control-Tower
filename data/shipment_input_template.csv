@@ -1,0 +1,2 @@
+origin_facility_id,destination_facility_id,carrier_id,service_level_id,promised_delivery_at,total_distance_km,weather_condition,facility_wait_minutes,priority
+FAC-001,FAC-002,CAR-001,SVC-EXPRESS,2026-11-02 18:00:00,570,HEAVY_RAIN,45,HIGH

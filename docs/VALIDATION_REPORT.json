@@ -1,0 +1,350 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "carriers: primary key exists and unique",
+      "passed": true,
+      "detail": "5 rows; 5 unique keys"
+    },
+    {
+      "check": "facilities: primary key exists and unique",
+      "passed": true,
+      "detail": "100 rows; 100 unique keys"
+    },
+    {
+      "check": "service_levels: primary key exists and unique",
+      "passed": true,
+      "detail": "3 rows; 3 unique keys"
+    },
+    {
+      "check": "routes: primary key exists and unique",
+      "passed": true,
+      "detail": "2104 rows; 2104 unique keys"
+    },
+    {
+      "check": "shipments: primary key exists and unique",
+      "passed": true,
+      "detail": "1000 rows; 1000 unique keys"
+    },
+    {
+      "check": "shipment_legs: primary key exists and unique",
+      "passed": true,
+      "detail": "2004 rows; 2004 unique keys"
+    },
+    {
+      "check": "tracking_events: primary key exists and unique",
+      "passed": true,
+      "detail": "6084 rows; 6084 unique keys"
+    },
+    {
+      "check": "facility_queues: primary key exists and unique",
+      "passed": true,
+      "detail": "2000 rows; 2000 unique keys"
+    },
+    {
+      "check": "weather_events: primary key exists and unique",
+      "passed": true,
+      "detail": "1000 rows; 1000 unique keys"
+    },
+    {
+      "check": "eta_estimates: primary key exists and unique",
+      "passed": true,
+      "detail": "10684 rows; 10684 unique keys"
+    },
+    {
+      "check": "delay_reasons: primary key exists and unique",
+      "passed": true,
+      "detail": "3 rows; 3 unique keys"
+    },
+    {
+      "check": "shipment_delay_assessments: primary key exists and unique",
+      "passed": true,
+      "detail": "1000 rows; 1000 unique keys"
+    },
+    {
+      "check": "shipment_status_history: primary key exists and unique",
+      "passed": true,
+      "detail": "1831 rows; 1831 unique keys"
+    },
+    {
+      "check": "data_quality_issues: primary key exists and unique",
+      "passed": true,
+      "detail": "14 rows; 14 unique keys"
+    },
+    {
+      "check": "carrier_calendars: primary key exists and unique",
+      "passed": true,
+      "detail": "5 rows; 5 unique keys"
+    },
+    {
+      "check": "facility_disruptions: primary key exists and unique",
+      "passed": true,
+      "detail": "20 rows; 20 unique keys"
+    },
+    {
+      "check": "route_change_history: primary key exists and unique",
+      "passed": true,
+      "detail": "20 rows; 20 unique keys"
+    },
+    {
+      "check": "routes.origin_facility_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "routes.destination_facility_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipments.carrier_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipments.service_level_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipments.origin_facility_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipments.destination_facility_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipment_legs.shipment_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipment_legs.route_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipment_legs.carrier_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "tracking_events.shipment_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "tracking_events.leg_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "tracking_events.carrier_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "facility_queues.facility_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "route_weather_impacts.route_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "route_weather_impacts.weather_event_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "eta_estimates.shipment_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipment_delay_assessments.shipment_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipment_delay_assessments.delay_reason_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipment_status_history.shipment_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "shipment_status_history.source_event_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "data_quality_issues.shipment_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "carrier_calendars.carrier_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "facility_disruptions.facility_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "route_change_history.shipment_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "route_change_history.old_route_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "route_change_history.new_route_id: foreign key",
+      "passed": true,
+      "detail": "0 invalid references"
+    },
+    {
+      "check": "carriers.service_type: allowed enum",
+      "passed": true,
+      "detail": "0 invalid values"
+    },
+    {
+      "check": "shipments.status: allowed enum",
+      "passed": true,
+      "detail": "0 invalid values"
+    },
+    {
+      "check": "weather_events.severity: allowed enum",
+      "passed": true,
+      "detail": "0 invalid values"
+    },
+    {
+      "check": "eta_estimates.risk_level: allowed enum",
+      "passed": true,
+      "detail": "0 invalid values"
+    },
+    {
+      "check": "facility_disruptions.disruption_type: allowed enum",
+      "passed": true,
+      "detail": "0 invalid values"
+    },
+    {
+      "check": "route_change_history.change_reason: allowed enum",
+      "passed": true,
+      "detail": "0 invalid values"
+    },
+    {
+      "check": "tracking_events.event_type: allowed enum",
+      "passed": true,
+      "detail": "0 invalid values"
+    },
+    {
+      "check": "data_quality_issues.severity: allowed enum",
+      "passed": true,
+      "detail": "0 invalid values"
+    },
+    {
+      "check": "shipment_delay_assessments.outcome: allowed enum",
+      "passed": true,
+      "detail": "0 invalid values"
+    },
+    {
+      "check": "shipment_legs: date ordering",
+      "passed": true,
+      "detail": "0 invalid ranges"
+    },
+    {
+      "check": "weather_events: date ordering",
+      "passed": true,
+      "detail": "0 invalid ranges"
+    },
+    {
+      "check": "carrier_calendars: date ordering",
+      "passed": true,
+      "detail": "0 invalid ranges"
+    },
+    {
+      "check": "facility_disruptions: date ordering",
+      "passed": true,
+      "detail": "0 invalid ranges"
+    },
+    {
+      "check": "tracking events: ingestion cannot precede event unless labelled",
+      "passed": true,
+      "detail": "0 unlabelled"
+    },
+    {
+      "check": "ETA: point-in-time cutoff",
+      "passed": true,
+      "detail": "0 unlabelled future cutoffs"
+    },
+    {
+      "check": "ETA: derived delay and timestamp arithmetic",
+      "passed": true,
+      "detail": "0 invalid snapshots"
+    },
+    {
+      "check": "ETA: unique shipment/cutoff snapshot",
+      "passed": true,
+      "detail": "10684 snapshots"
+    },
+    {
+      "check": "ETA: snapshot at shipment creation",
+      "passed": true,
+      "detail": "0 shipments missing"
+    },
+    {
+      "check": "tracking events: duplicate rows explicitly flagged",
+      "passed": true,
+      "detail": "10 duplicate groups; 0 unlabelled rows"
+    },
+    {
+      "check": "shipment lifecycle history: allowed transitions and chronological order",
+      "passed": true,
+      "detail": "0 invalid transitions/orderings"
+    },
+    {
+      "check": "route changes: effective timestamp and ground-truth label",
+      "passed": true,
+      "detail": "0 invalid rows"
+    },
+    {
+      "check": "data quality issues: labelled ground truth",
+      "passed": true,
+      "detail": "0 unlabelled issues"
+    },
+    {
+      "check": "carrier calendars populated",
+      "passed": true,
+      "detail": "5 rows"
+    },
+    {
+      "check": "facility disruption windows populated",
+      "passed": true,
+      "detail": "20 rows"
+    },
+    {
+      "check": "multiple ETA snapshots generated",
+      "passed": true,
+      "detail": "10684 snapshots for 1000 shipments"
+    }
+  ],
+  "summary": {
+    "check_count": 68,
+    "passed": 68,
+    "failed": 0
+  }
+}
